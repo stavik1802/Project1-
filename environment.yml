@@ -1,0 +1,41 @@
+name: MPAC
+channels:
+  - pytorch
+  - conda-forge
+  - nvidia
+  - defaults 
+dependencies:
+  - cudatoolkit>=11.1
+  - cudnn
+  - nccl
+  - matplotlib
+  - numpy
+  - pip
+  - python <= 3.10
+  - scipy
+  - seaborn
+  - lockfile
+  - absl-py
+  - dm-env
+  - dm-tree
+  - future
+  - glfw
+  - h5py
+  - lxml
+  - mock
+  - nose
+  - pillow
+  - protobuf
+  - pyopengl
+  - pyparsing
+  - requests
+  - setuptools!=50.0.0
+  - tqdm
+  - jupyter=1.0.0
+  - gym-all
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+    - dm-control
+    - "--editable=git+https://github.com/google-research/realworldrl_suite.git#egg=realworldrl_suite"
