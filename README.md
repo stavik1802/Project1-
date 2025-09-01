@@ -216,14 +216,17 @@ python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit -
 
 ### *MPAC training (both robust and safe)
 ```bash
-python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit --robust --robust_type ramu --safe 
+python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit --robust --robust_type ramu --safe
 ```
 
 ### **Evaluation**
 ```bash
 python -m MPAC.eval --import_file <train_filename> --import_path logs/
 ```
-
+### **Safety_constraints**
+```bash
+Add --energy_constraint battery/thermal or --energy_constraints_all to the command line of train and eval for safety constraints addition.
+```
 ### **Visualization**
 
 The project provides multiple plotting utilities for comprehensive analysis:
