@@ -196,27 +196,27 @@ pip install -e energy_net/
 
 #### **Basic Training**
 ```bash
-python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit --total_timesteps 1000000
+python -m MPAC.train_wrap --env_type energy_net --env_name pcs --task_name pcs_unit --total_timesteps 1000000
 ```
 
 #### **Safe RL Training**
 ```bash
-python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit --safe 
+python -m MPAC.train_wrap --env_type energy_net --env_name pcs --task_name pcs_unit --safe 
 ```
 
 #### **Robust Training with RAMU**
 ```bash
-python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit --robust --robust_type ramu
+python -m MPAC.train_wrap --env_type energy_net --env_name pcs --task_name pcs_unit --robust --robust_type ramu
 ```
 
 #### **Multi-Objective Training**
 ```bash
-python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit --multiobj_enable --multiobj_coeff 0.5
+python -m MPAC.train_wrap --env_type energy_net --env_name pcs --task_name pcs_unit --multiobj_enable --multiobj_coeff 0.5
 ```
 
 ### *MPAC training (both robust and safe)
 ```bash
-python -m MPAC.train --env_type energy_net --env_name pcs --task_name pcs_unit --robust --robust_type ramu --safe
+python -m MPAC.train_wrap --env_type energy_net --env_name pcs --task_name pcs_unit --robust --robust_type ramu --safe
 ```
 
 ### **Evaluation**
